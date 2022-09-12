@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT JS buoi6</title>
+    <!-- CSS BS4  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- my css  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="myBody">
+    <section>
+        <div class="bg-info d-flex justify-content-center">
+            <h1 class="text-center color-3">Bài Tập JS Buổi 7&8</h1>
+            <br>
+        </div>
+    </section>
+
+    <section class="list__BT bg-warning">
+        <br>
+        <div class="container ">
+            <ul class="text-center text-primary">
+                <li class="d-inline mx-1 ">
+                    <a href="#bai1"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            1</button></a>
+
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai2"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            2</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai3"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            3</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai4"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            4</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai5"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            5</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai6"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            6</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai47"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            7</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai8"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            8</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai9"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            9</button></a>
+                </li>
+                <li class="d-inline mx-1 ">
+                    <a href="#bai10"><button class="btn btn-primary font-weight-bold"><i class="fa-solid fa-book"></i>Bài
+                            10</button></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+    </section>
+    <hr>
+    <hr>
+    <section class="tab__arr container">
+        <div class="row">
+            <div class="col-6">
+                <div class="exercise_1" id="bai1">
+                    <h4>
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        Nhập số và nhấn thêm số để lưu trữ
+                    </h4>
+                </div>
+                <div class="form-group">
+                    <label for="arr">Nhập số:</label>
+                    <input type="number" name="arr" placeholder="nhập số nguyên vào đây" class="form-control w-80" id="arr">
+                </div>
+                <div>
+                    <button class="btn btn-success" id="btnArr">Thêm số</button>
+                </div>
+                <div class="footer text-muted alert alert-success" id="showInfoArr">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <section class="one container">
+        <div class="row">
+            <div class="col-6">
+                <div class="exercise_1" id="bai1">
+                    <h4>
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        Bài 1: Tổng các số dương trong mảng
+                    </h4>
+                </div>
+                
+                <div>
+                    <button class="btn btn-success" id="btnTSD">Tống số dương</button>
+                </div>
+                <div class="footer text-muted alert alert-success" id="showInfoTSD">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="two container">
+        <div class="row">
+            <div class="col-6">
+                <div class="exercise_2" id="bai2">
+                    <h4>
+                        <i class="fa-solid fa-hand"></i>
+                        Bài 2:Đếm số dương
+                    </h4>
+                </div>
+                <div>
+                    <button class="btn btn-success" id="btnDemSo">Đếm số</button>
+                </div>
+                <div class="footer text-muted alert alert-success" id="showInfoDemSo">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="three container">
+        <div class="row">
+            <div class="col-6">
+                <div class="exercise_3" id="bai3">
+                    <h4>
+                        <i class="fa-solid fa-calculator"></i>
+                        Bài 3:Tìm số nhỏ nhất
+                    </h4>
+                </div>
+                <div>
+                    <button class="btn btn-success" id="btnSNN">Tìm số nhỏ nhất</button>
+                </div>
+                <div class="footer text-muted alert alert-success" id="showInfoSNN">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="four container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_4" id="bai4">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 4:Tìm số dương nhỏ nhất trong mảng
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnSDNN">Tìm số dương nhỏ nhất</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoSDNN">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="five container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_5" id="bai5">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 5:Tìm số chẵn cuối cùng trong mảng
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnSCCC">Tìm số chẵn cuối cùng</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoSCCC">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="six container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_6" id="bai6">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 6:Đổi chỗ 2 giá trị trong mảng
+                    </h4>
+                </div>
+            </div>
+            <div class="form-group ml-2">
+                <label class="ml-2" for="number1">Nhập vào :</label>
+                <input type="number" name="number1" placeholder="Nhập số vị trí 1" class="form-control mx-2 "
+                    id="number1">
+            </div>
+            <div class="form-group ml-2">
+                <label class="ml-2" for="number2">Nhập vào :</label>
+                <input type="number" name="number1" placeholder="Nhập số vị trí 2" class="form-control mx-2"
+                    id="number2">
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnDC">Đổi chỗ</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoDC">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="seven container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_7" id="bai7">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 7:Sắp xếp mảng theo thứ tự tăng dần
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnSapXep">Sắp xếp tăng dần</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoSapXep">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="eight container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_8" id="bai8">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 8:Tìm số nguyên tố đầu tiên trong mảng
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnSNTDT">Tìm số nguyên tố đầu tiên</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoSNTDT">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="nine container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_9" id="bai9">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 9:Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên
+                    </h4>
+                </div>
+            </div>
+            <div class="col-6 my-2 form-group ">
+                <input type="number" placeholder="Nhập số" id="themSo" class="form-control">
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnThemSo">Thêm số</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoThemSo">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnDSN">Đếm số nguyên</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoDSN">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+
+    <section class="ten container">
+        <div class="row gy-3 align-items-center px-2">
+            <div class="col-12">
+                <div class="exercise_10" id="bai10">
+                    <h4>
+                        <i class="fa-solid fa-shapes"></i>
+                        Bài 10:So sánh số lượng số dương và số lượng số âm 
+                    </h4>
+                </div>
+            </div>
+            <div class="col-12 my-2 ">
+                <button class="btn btn-success" id="btnSoSanh">So sánh</button>
+            </div>
+            <div class="footer text-muted alert alert-success" id="showInfoSoSanh">
+                <i class="fa-solid fa-shapes"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <div class="backToTop">
+        <a href="#" class="cd-top text-replace js-cd-top" id="toTop"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+
+    <!-- My JS  -->
+    <script src="./jsBuoi_7_8/BTbuoi_7_8.js"></script>
+    <!--jquery, JS BS4  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- JS backTotop  -->
+    <script src="./backToTop/assets/js/main.js"></script>
+    <script src="./backToTop/assets/js/util.js"></script>
+</body>
+
+</html>
